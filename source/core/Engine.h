@@ -47,16 +47,16 @@ public: // update and render core
 
 private: // update specific functions
 
-	inline void updateDelta();
-	inline void updateEvent();
-	inline void updateInput();
-	inline void updateCells();
+	void updateDelta();
+	void updateEvent();
+	void updateInput();
+	void updateCells();
 
 public: // render specific functions
 
-	inline void clear();
-	inline void draw();
-	inline void display();
+	void clear();
+	void draw();
+	void display();
 
 public: // 'get' Funcitons
 
@@ -66,7 +66,6 @@ private: // engine related
 
 	sf::RenderWindow*	window				= nullptr;
 	sf::Clock*			clock				= nullptr;
-	//ThreadManager*		threadManager		= nullptr;		
 	float				deltaTimeRestart	= 0.f;
 	float				deltaTimeElapsed	= 0.f;
 
